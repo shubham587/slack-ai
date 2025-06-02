@@ -1,12 +1,120 @@
-# React + Vite
+# Slack AI - Modern Real-Time Chat Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Slack AI is a feature-rich Slack clone built with modern technologies, offering real-time communication, AI-powered features, and a seamless user experience.
 
-Currently, two official plugins are available:
+![Misogi Screenshot](screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+### Core Communication
+- **Real-time Messaging** - Instant message delivery using WebSocket
+- **Channels & Direct Messages** - Public channels and private DMs
+- **Thread Conversations** - Organize discussions in threads
+- **File Sharing** - Upload and share files with team members
+- **Message Editing & Deletion** - Edit or delete sent messages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### AI-Powered Features
+- **Smart Reply Suggestions** - AI-generated response suggestions
+- **Meeting Notes Generator** - Automatically generate structured notes from conversations
+- **Message Enhancement** - AI-powered message improvement suggestions
+- **Context-Aware Responses** - AI considers conversation context for better suggestions
+
+### User Experience
+- **Modern UI** - Clean and intuitive interface using Chakra UI
+- **Responsive Design** - Works seamlessly on desktop and mobile
+- **Real-time Updates** - Instant updates for messages, reactions, and user status
+- **Search Functionality** - Search through messages and channels
+- **User Settings** - Customize your profile and preferences
+- **Dark/Light Mode** - Choose your preferred theme (To be implemented)
+
+## 🛠️ Technology Stack
+
+### Frontend
+- React.js with Vite
+- Redux Toolkit for state management
+- Chakra UI for components
+- Socket.IO client for real-time features
+- React Router for navigation
+
+### Backend
+- Flask (Python)
+- Flask-SocketIO for WebSocket support
+- MongoDB for database
+- JWT for authentication
+- OpenAI API for AI features
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.9+
+- Node.js 16+
+- MongoDB (or MongoDB Atlas account)
+- OpenAI API key
+
+### Environment Variables
+
+#### Backend (.env)
+\`\`\`env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET_KEY=your_jwt_secret
+SECRET_KEY=your_app_secret
+OPENAI_API_KEY=your_openai_api_key
+FRONTEND_URL=http://localhost:5173
+\`\`\`
+
+#### Frontend (.env)
+\`\`\`env
+VITE_API_URL=http://localhost:5001
+\`\`\`
+
+### Installation
+
+1. **Clone the repository**
+   \`\`\`bash
+   git clone https://github.com/shubham587/slack-ai-be.git
+   git clone https://github.com/shubham587/slack-ai.git
+   \`\`\`
+
+2. **Backend Setup**
+   \`\`\`bash
+   cd backend
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\\Scripts\\activate
+   pip install -r requirements.txt
+   python run.py
+   \`\`\`
+
+3. **Frontend Setup**
+   \`\`\`bash
+   cd frontend
+   npm install
+   npm run dev
+   \`\`\`
+
+4. Open http://localhost:5173 in your browser
+
+## 📱 Usage
+
+1. **Sign Up/Login**
+   - Create an account or login
+   - Set up your profile picture and display name
+
+2. **Channels**
+   - Create new channels
+   - Join existing channels
+   - Send messages and files
+
+3. **Direct Messages**
+   - Start private conversations
+   - Share files securely
+
+4. **AI Features**
+   - Use the AI composer for smart replies
+   - Generate meeting notes from conversations
+   - Get message improvement suggestions
+
+## 🙏 Acknowledgments
+
+- OpenAI for the AI capabilities
+- Chakra UI for the component library
+- The open-source community for inspiration and tools 
