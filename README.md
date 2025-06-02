@@ -2,7 +2,7 @@
 
 Slack AI is a feature-rich Slack clone built with modern technologies, offering real-time communication, AI-powered features, and a seamless user experience.
 
-![Misogi Screenshot](screenshot.png)
+### 🚩Find the Slack AI image at /slack-ai-img folder
 
 ## 🌟 Features
 
